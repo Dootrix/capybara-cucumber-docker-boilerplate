@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    command : cucumber --order random
+    working_dir: /app
+    volumes:
+      - ./tmp:/app/tmp
+    environment:
+      ROOT_URL: https://dootrix.com
+    privileged: true
