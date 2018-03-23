@@ -2,9 +2,6 @@ require 'capybara/cucumber'
 require 'capybara-screenshot/cucumber'
 require 'selenium/webdriver'
 require 'socket'
-require 'fileutils'
-
-FileUtils.rm_rf('tmp')
 
 Capybara.save_path = 'tmp/screenshots'
 Capybara.ignore_hidden_elements = false
