@@ -3,7 +3,6 @@ require 'capybara-screenshot/cucumber'
 require 'selenium/webdriver'
 require 'socket'
 require 'fileutils'
-require 'pry'
 
 FileUtils.rm_rf('tmp')
 
